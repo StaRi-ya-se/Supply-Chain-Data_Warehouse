@@ -1,6 +1,6 @@
-from generate_data import generate_suppliers
-from load_data import load_suppliers
+from generate_data import generate_warehouses
+from load_data import load_warehouses
 
-suppliers_df = generate_suppliers(20)
+warehouses_df = generate_warehouses(10)
 
-load_suppliers(suppliers_df)
+load_warehouses(warehouses_df)

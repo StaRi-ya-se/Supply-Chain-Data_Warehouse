@@ -50,6 +50,33 @@ def generate_suppliers(num_suppliers=20):
 
     return pd.DataFrame(suppliers)
 
+WAREHOUSE_CITIES = [
+    "Mumbai",
+    "Delhi",
+    "Bangalore",
+    "Chennai",
+    "Hyderabad",
+    "Pune",
+    "Kolkata",
+    "Ahmedabad",
+    "Jaipur",
+    "Lucknow"
+]
+
+def generate_warehouses(num_warehouses=10):
+
+    warehouses = []
+
+    for i in range(num_warehouses):
+
+        warehouses.append({
+            "warehouse_name": f"Warehouse_{i+1}",
+            "city": random.choice(WAREHOUSE_CITIES),
+            "capacity": random.randint(1000, 10000)
+        })
+
+    return pd.DataFrame(warehouses)
+
 if __name__ == "__main__":
 
     df = generate_products()
