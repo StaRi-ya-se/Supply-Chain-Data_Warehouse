@@ -46,3 +46,14 @@ def load_dates(df):
     )
 
     print(f"Loaded {len(df)} dates into Dim_Date")
+
+def load_fact_orders(df):
+
+    df.to_sql(
+        "fact_orders",
+        engine,
+        if_exists="append",
+        index=False
+    )
+
+    print(f"Loaded {len(df)} orders into Fact_Orders")

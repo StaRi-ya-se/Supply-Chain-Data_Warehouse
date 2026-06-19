@@ -1,6 +1,6 @@
-from generate_data import generate_dates
-from load_data import load_dates
+from generate_fact_orders import generate_fact_orders
+from load_data import load_fact_orders
 
-dates_df = generate_dates(365)
+orders_df = generate_fact_orders(10000)
 
-load_dates(dates_df)
+load_fact_orders(orders_df)
