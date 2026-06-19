@@ -29,3 +29,20 @@ KPIs to Track
 --Supplier KPIs
     Supplier Revenue Contribution
     Supplier Order Volume
+
+Supply-Chain-Data-Warehouse/
+
+│
+├── data/
+│
+├── sql/
+│   └── schema.sql
+│
+├── notebooks/
+│
+├── etl/
+│   └── etl.py
+│
+├── dashboard/
+│
+└── README.md
