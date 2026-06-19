@@ -26,6 +26,29 @@ def generate_products(num_products=100):
 
     return pd.DataFrame(products)
 
+SUPPLIER_COUNTRIES = [
+    "India",
+    "USA",
+    "Germany",
+    "China",
+    "Japan",
+    "UK",
+    "Canada",
+    "Australia"
+]
+
+def generate_suppliers(num_suppliers=20):
+
+    suppliers = []
+
+    for _ in range(num_suppliers):
+
+        suppliers.append({
+            "supplier_name": fake.company(),
+            "country": random.choice(SUPPLIER_COUNTRIES)
+        })
+
+    return pd.DataFrame(suppliers)
 
 if __name__ == "__main__":
 

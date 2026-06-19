@@ -1,6 +1,6 @@
-from generate_data import generate_products
-from load_data import load_products
+from generate_data import generate_suppliers
+from load_data import load_suppliers
 
-products_df = generate_products(100)
+suppliers_df = generate_suppliers(20)
 
-load_products(products_df)
+load_suppliers(suppliers_df)

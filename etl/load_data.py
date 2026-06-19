@@ -13,3 +13,14 @@ def load_products(df):
     )
 
     print(f"Loaded {len(df)} products into Dim_Product")
+
+def load_suppliers(df):
+
+    df.to_sql(
+        "dim_supplier",
+        engine,
+        if_exists="append",
+        index=False
+    )
+
+    print(f"Loaded {len(df)} suppliers into Dim_Supplier")
