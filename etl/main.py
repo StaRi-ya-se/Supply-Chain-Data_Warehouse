@@ -1,6 +1,6 @@
-from generate_data import generate_warehouses
-from load_data import load_warehouses
+from generate_data import generate_dates
+from load_data import load_dates
 
-warehouses_df = generate_warehouses(10)
+dates_df = generate_dates(365)
 
-load_warehouses(warehouses_df)
+load_dates(dates_df)

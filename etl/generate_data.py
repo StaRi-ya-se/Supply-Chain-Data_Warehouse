@@ -77,6 +77,31 @@ def generate_warehouses(num_warehouses=10):
 
     return pd.DataFrame(warehouses)
 
+from datetime import datetime, timedelta
+
+def generate_dates(num_days=365):
+
+    start_date = datetime(2026, 1, 1)
+
+    dates = []
+
+    for i in range(num_days):
+
+        current_date = start_date + timedelta(days=i)
+
+        dates.append({
+            "date_id": int(current_date.strftime("%Y%m%d")),
+            "full_date": current_date.date(),
+            "day": current_date.day,
+            "month": current_date.month,
+            "quarter": (current_date.month - 1) // 3 + 1,
+            "year": current_date.year,
+            "day_name": current_date.strftime("%A"),
+            "month_name": current_date.strftime("%B")
+        })
+
+    return pd.DataFrame(dates)
+
 if __name__ == "__main__":
 
     df = generate_products()

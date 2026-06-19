@@ -35,3 +35,14 @@ def load_warehouses(df):
     )
 
     print(f"Loaded {len(df)} warehouses into Dim_Warehouse")
+
+def load_dates(df):
+
+    df.to_sql(
+        "dim_date",
+        engine,
+        if_exists="append",
+        index=False
+    )
+
+    print(f"Loaded {len(df)} dates into Dim_Date")
