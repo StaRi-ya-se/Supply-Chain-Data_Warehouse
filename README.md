@@ -59,25 +59,28 @@ The project follows a Star Schema design.
 Supply-Chain-Data-Warehouse/
 │
 ├── dashboards/
-│   └── supply_chain_dashboard.png
+│   └── Power_BI_dashboard.png
 │
 ├── docs/
-│   ├── schema.png
-│   └── business_insights.md
+│   ├── business_insights.md
+│   └── STAR_schema.png
 │
 ├── data/
 │   ├── raw/
 │   └── processed/
 │
 ├── etl/
+│   ├── config.py
 │   ├── generate_data.py
 │   ├── generate_fact_orders.py
+│   ├── load_data.py
 │   └── main.py
 │
 ├── sql/
 │   ├── create_tables.sql
 │   └── analytics_queries.sql
 │
+├── tests/
 ├── .env.example
 ├── .gitignore
 ├── requirements.txt
