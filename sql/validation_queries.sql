@@ -1,0 +1,5 @@
+SELECT COUNT(*) FROM Dim_Product;
+SELECT COUNT(*) FROM Dim_Supplier;
+SELECT COUNT(*) FROM Dim_Warehouse;
+SELECT COUNT(*) FROM Dim_Date;
+SELECT COUNT(*) FROM Fact_Orders;
