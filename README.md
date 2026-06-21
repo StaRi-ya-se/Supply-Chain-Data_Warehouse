@@ -49,7 +49,7 @@ The project follows a Star Schema design.
 
 ### Schema Diagram
 
-![Star Schema](docs/schema.png)
+![Star Schema](docs/STAR_schema.png)
 
 ---
 
@@ -172,7 +172,7 @@ The Power BI dashboard provides:
 
 ### Dashboard Preview
 
-![Dashboard](dashboards/supply_chain_dashboard.png)
+![Dashboard](dashboards/Power_BI_dashboard.png)
 
 ---
 
